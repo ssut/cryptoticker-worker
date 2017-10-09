@@ -1,0 +1,20 @@
+[datastore]
+host = "http://localhost:8086"
+username = "test"
+password = "test"
+database = "tickers"
+
+[markets]
+
+    [markets.coinone]
+    # use websocket-based subscriber
+    websocket = true
+    # every in seconds
+    period = 15
+
+    [markets.poloniex]
+    websocket = true
+    period = 10
+
+    [markets.bittrex]
+    period = 30
